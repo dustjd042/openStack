@@ -12,4 +12,4 @@
 
 
 > 본 콘텐츠는 과학기술정보통신부 및 정보통신기획평가원의 「SW중심대학사업」 지원을 받아 제작된 자료를 기반으로 작성되었습니다.
-> [OpenStack을 이용한 클라우드 시스템 구축](https://www.youtube.com/watch?v=X_5eMWyeH3Q&list=PLpiZz61rRNHXfCQC2-wfINlW9iO2PeOT7&index=2)
+* [OpenStack을 이용한 클라우드 시스템 구축](https://www.youtube.com/watch?v=X_5eMWyeH3Q&list=PLpiZz61rRNHXfCQC2-wfINlW9iO2PeOT7&index=2)
