@@ -13,4 +13,4 @@
 * [OpenStack을 이용한 클라우드 시스템 구축](https://www.youtube.com/watch?v=X_5eMWyeH3Q&list=PLpiZz61rRNHXfCQC2-wfINlW9iO2PeOT7&index=2)
   
 > 본 콘텐츠는 「CC BY-NC-SA」 라이선스를 따르는 자료를 참고하여 작성되었습니다.
-* [OpenStackPractice]([https://www.youtube.com/watch?v=X_5eMWyeH3Q&list=PLpiZz61rRNHXfCQC2-wfINlW9iO2PeOT7&index=2](https://github.com/JBNU-JEduTools/OpenStackPractice))
+* [OpenStackPractice](https://github.com/JBNU-JEduTools/OpenStackPractice)
