@@ -1,4 +1,4 @@
-
+<img width="691" height="52" alt="image" src="https://github.com/user-attachments/assets/f4d532a8-79d1-4201-9711-c9ae5b42febf" />
 
 
 
@@ -23,7 +23,8 @@ antelope
 * MySQL
 mysql -u root -p
 SELECT user, host FROM mysql.user;
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '비밀번호';
+CREATE USER 'root'@'%' IDENTIFIED BY '비밀번호';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 
 * 레딧MQ 모니터링
@@ -38,6 +39,25 @@ http://192.168.0.25:15672/#/
 etcd = OpenStack의 “분산 상태/결정의 기준점 (source of truth)”
 etcd는 “여러 서버가 동시에 같은 사실을 인정하게 만드는 방식(합의)”이 내장돼 있다
 Raft 합의 알고리즘
+
+* 인프라 모니터링
+systemctl status --all
+systemctl list-units --failed
+
+* keystone
+인증 서비스, 역할 권한 제어
+https://docs.openstack.org/keystone/2023.1/install/
+
+* Glance
+https://docs.openstack.org/glance/2023.1/install/
+VM 이미지(디스크 이미지) 저장, 검색, 배포
+/var/lib/glance/images/.: 이미지 저장 장소
+
+* Placement
+https://docs.openstack.org/placement/2023.1/install/
+클라우드 자원의 효율적 할당 및 관리 최적화를 위한 서비스
+
+
 
 ---
 > 본 콘텐츠는 과학기술정보통신부 및 정보통신기획평가원의 「SW중심대학사업」 지원을 받아 제작된 자료를 기반으로 작성되었습니다.
