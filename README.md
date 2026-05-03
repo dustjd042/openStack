@@ -13,6 +13,32 @@
 * [virtualbox](https://www.virtualbox.org/wiki/Downloads)
 * [ubuntu](https://releases.ubuntu.com)
 
+### 접속
+* ssh -p 10001 ubuntu@192.168.0.25
+* ssh -p 10003 ubuntu@192.168.0.25
+
+# 설치 버전
+antelope
+
+* MySQL
+mysql -u root -p
+SELECT user, host FROM mysql.user;
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '비밀번호';
+FLUSH PRIVILEGES;
+
+* 레딧MQ 모니터링
+sudo rabbitmq-plugins enable rabbitmq_management
+sudo rabbitmqctl set_user_tags openstack administrator
+http://192.168.0.25:15672/#/
+
+* Memcached
+
+* etcd
+신뢰 가능한 상태 저장소
+etcd = OpenStack의 “분산 상태/결정의 기준점 (source of truth)”
+etcd는 “여러 서버가 동시에 같은 사실을 인정하게 만드는 방식(합의)”이 내장돼 있다
+Raft 합의 알고리즘
+
 ---
 > 본 콘텐츠는 과학기술정보통신부 및 정보통신기획평가원의 「SW중심대학사업」 지원을 받아 제작된 자료를 기반으로 작성되었습니다.
 * [OpenStack을 이용한 클라우드 시스템 구축](https://www.youtube.com/watch?v=X_5eMWyeH3Q&list=PLpiZz61rRNHXfCQC2-wfINlW9iO2PeOT7&index=2)
