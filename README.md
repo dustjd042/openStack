@@ -1,4 +1,4 @@
-<img width="691" height="52" alt="image" src="https://github.com/user-attachments/assets/f4d532a8-79d1-4201-9711-c9ae5b42febf" />
+<img width="907" height="52" alt="image" src="https://github.com/user-attachments/assets/80967e0e-22c6-461c-bf5d-c4064d5c2841" /><img width="691" height="52" alt="image" src="https://github.com/user-attachments/assets/f4d532a8-79d1-4201-9711-c9ae5b42febf" />
 
 
 
@@ -57,7 +57,20 @@ VM 이미지(디스크 이미지) 저장, 검색, 배포
 https://docs.openstack.org/placement/2023.1/install/
 클라우드 자원의 효율적 할당 및 관리 최적화를 위한 서비스
 
+* Nova
+가상 머심(VM) 인스턴스를 생성, 관리, 배포하는 컴퓨팅 자원 관리 서비스
+직접 인스턴스를 생성 관리 수정하는 것이 아닌 컴퓨트 노드 KVM에 관련 요청을 보낸다.
+(https://docs.openstack.org/nova/2023.1/install/)
 
+* Neutron
+네트워크 연결을 관리하고, 가상 네트워크, 서브넷, 라우터 등을 구성하는 서비스
+https://docs.openstack.org/neutron/2023.1/install/
+OVS : https://docs.openstack.org/neutron/2023.1/admin/deploy-ovs-selfservice.html
+
+* Horizon
+OpenStack의 모든 서비스를 웹 기반 GUI로 관리할 수 있게 해주는 대시보드 서비스
+패키지 설치 방법과 소스코드 수동 설치 방법이 존재
+https://docs.openstack.org/horizon/2023.1/install/
 
 ---
 > 본 콘텐츠는 과학기술정보통신부 및 정보통신기획평가원의 「SW중심대학사업」 지원을 받아 제작된 자료를 기반으로 작성되었습니다.
